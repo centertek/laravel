@@ -14,6 +14,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/auth', function() {
+    return ('auth.login');
+});
+
 Route::get('/usuarios', 'UserController@index');
 
 Route::get('/usuarios/{id}', 'UserController@show')
