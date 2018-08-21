@@ -9,7 +9,8 @@ class UserController extends Controller
     public function index()
     {
         $title = "Listado de Usuarios";
-        return view('users', [
+        return view('users', 
+        [
             'title'=>$title
         ]);
         
