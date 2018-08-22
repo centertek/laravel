@@ -7,9 +7,12 @@ use App\Http\Controllers\Controller;
 
 class LoginController_1 extends Controller
 {
-    public function login(Request $request)
+    public function login()
     {
-        $credenciales = $request->only('email', 'password');
+        $credenciales = $this->validate(request(), [
+            'email' => 'email|required|string',
+            'password' => 'required|string'
+        ]);
         if(Auth::attemp($credenciales))
         {
             return 'Tu sesion iniciada correctamente';
