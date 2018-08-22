@@ -18,6 +18,8 @@ Route::get('/auth', function () {
     return view('auth.login');
 });
 
+Route::post('login', 'AuthLoginController_1@login')->name('login');
+
 Route::get('/usuarios', 'UserController@index');
 
 Route::get('/usuarios/{id}', 'UserController@show')
