@@ -18,7 +18,6 @@ Route::get('/auth', function () {
     return view('auth.login');
 });
 
-Route::post('login', 'AuthLoginController_1@login')->name('login');
 
 Route::get('/usuarios', 'UserController@index');
 
@@ -32,3 +31,5 @@ Route::get('usuarios/{nickname}', function ($nickname) {
 });
 
 Route::get('saludo/{name}/{nickname?}', 'WelcomeUserController');
+
+Route::post('login', 'Auth\LoginController_1@login')->name('login');
