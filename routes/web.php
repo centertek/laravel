@@ -1,4 +1,4 @@
-como<?php
+<?php
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,8 +14,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/auth', function() {
-    return ('auth.login');
+Route::get('/auth', function () {
+    return view('auth.login');
 });
 
 Route::get('/usuarios', 'UserController@index');
