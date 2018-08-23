@@ -9,11 +9,11 @@ class LoginController_1 extends Controller
 {
     public function login()
     {
-        $credenciales = $this->validate(request(), [
+        $credentials = $this->validate(request(), [
             'email' => 'email|required|string',
             'password' => 'required|string'
         ]);
-        if(Auth::attemp($credenciales))
+        if(Auth::attemp($credentials))
         {
             return 'Tu sesion iniciada correctamente';
         }
