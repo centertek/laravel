@@ -20,7 +20,7 @@
                             <input class="form-control" 
                                 type="password" name="password" id="password" 
                                 placeholder="Ingrese su password">
-                            </div>
+                        </div>
                         <button type="submit" class="btn btn-primary btn-block">Acceder</button>
                     </form>
                 </div>
