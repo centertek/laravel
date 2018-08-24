@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header"><span class="font-weight-bold">{{ __('Acceso ') }}</span></div>
+                <div class="card-header"><span class="font-weight-bold">{{ __('Acceso a la Aplicación') }}</span></div>
                 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}">
@@ -58,7 +58,7 @@
                                 </button>
 
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
+                                    {{ __('Olvisó su contraseña?') }}
                                 </a>
                             </div>
                         </div>
