@@ -32,7 +32,7 @@ Route::get('usuarios/{nickname}', function ($nickname) {
 
 Route::get('saludo/{name}/{nickname?}', 'WelcomeUserController');
 
-Route::post('login', 'Auth\LoginController_1@login')->name('login');
+//Route::post('login', 'Auth\LoginController_1@login')->name('login');
 
 Auth::routes();
 
